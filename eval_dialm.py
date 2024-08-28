@@ -26,9 +26,9 @@ from tqdm import tqdm
 Dial-M Evaluation:-
 Download the Dial-M model before running the evaluation. Follow https://github.com/SuvodipDey/Dial-M.
 
-python eval_dialm.py -path=<output_dialm> -dt=dd/pc -out=<out_dir> -out=<generated_resonse_file> -lbl=<output_label>
+python eval_dialm.py -path=<output_dialm> -dt=dd/pc -out=<out_dir> -out=<model_dir> -lbl=<output_label>
 
--out: the path of the trained model containing the output of the generate.py file in the -out argument. 
+-out: the path of the trained model.
 -lbl: the label that was used to generate the output by running the generate.py script. 
 
 """
