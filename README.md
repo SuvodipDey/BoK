@@ -6,6 +6,8 @@ Python 3.11 or later.
 ```console
 ❱❱❱ pip install -r requirements.txt
 ```
+Set up Perl. 
+Download and unzip [meteor-1.5.tar.gz](https://cs.cmu.edu/~alavie/METEOR/download/meteor-1.5.tar.gz) inside 3rdparty directory.
 
 ## Download Datasets
 Download the following datasets. 
