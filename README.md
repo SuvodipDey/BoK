@@ -32,3 +32,20 @@ Train GPT2 and T5 by running train.py script provided in the respective director
 ```console
 ❱❱❱ python train.py -path=<model_dir> -src_file=train.py -dt=dd/pc
 ```
+## Inference
+Generate dialogues for DailyDialog and PersonaChat test data.
+
+1. For base model (without BoK/BoW loss) 
+```console
+python generate.py -path=<model dir> -dt=dd/pc 
+```
+
+2. For models using BoK/BoW loss (only response generation)
+```console
+python generate.py -path=<model_dir> -dt=dd/pc -key 
+```
+
+3. For models using BoK/BoW loss (response generation + tok-k token prediction)
+```console
+python generate_predict.py -path=<model_dir> -dt=dd/pc -key
+```
