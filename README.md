@@ -6,3 +6,11 @@ Python 3.11 or later.
 ```console
 ❱❱❱ pip install -r requirements.txt
 ```
+
+## Download Datasets
+Download the following datasets. 
+
+1. DailyDialog: Download link http://yanran.li/files/ijcnlp_dailydialog.zip
+2. PersonaChat: Download data using ParlAI (https://parl.ai/docs/tasks.html#persona-chat)
+
+Set the dataset paths correctly in the following files: DialoGPT/create_data.py and T5/create_data.py
