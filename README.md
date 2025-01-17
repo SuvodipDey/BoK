@@ -29,6 +29,6 @@ Train GPT2 and T5 by running train.py script provided in the respective director
 ```
 
 3. Basic Model
-```
+```console
 ❱❱❱ python train.py -path=<model_dir> -src_file=train.py -dt=dd/pc
 ```
