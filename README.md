@@ -74,3 +74,6 @@ Run evaluation script.
 ❱❱❱ python eval_dialm.py -path=<output_dialm> -dt=dd/pc -out=<out_dir> -out=<model_dir> -lbl=<output_label>
 ```
 Note: out is the path of the trained model and lbl is the label that was used to generate the output by running the generate.py script. 
+
+### USL-H Evaluation
+Follow [USL-H](https://github.com/vitouphy/usl_dialogue_metric) to compute the metrics.
