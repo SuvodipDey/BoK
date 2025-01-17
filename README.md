@@ -65,3 +65,12 @@ Compute the metrics.
 ❱❱❱ python compute_metrics.py -in=<result_path> -hyp=<hyp_file>
 ```
 Note: <result_path> is the directory that contains the <hyp_file> and the <ref_file>.
+
+### Dial-M Evaluation
+Follow [Dial-M](https://github.com/SuvodipDey/Dial-M) repo to train (or download) Dial-M model.
+
+Run evaluation script.
+```console
+❱❱❱ python eval_dialm.py -path=<output_dialm> -dt=dd/pc -out=<out_dir> -out=<model_dir> -lbl=<output_label>
+```
+Note: out is the path of the trained model and lbl is the label that was used to generate the output by running the generate.py script. 
