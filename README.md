@@ -51,3 +51,17 @@ python generate.py -path=<model_dir> -dt=dd/pc -key
 ```console
 python generate_predict.py -path=<model_dir> -dt=dd/pc -key
 ```
+
+## Evaluation 
+
+1. Word-overlapping based metrics (BLEU, NIST, METEOR, Diversity, Entropy)
+
+Postprocess the generated and reference file. This step is required only for the DailyDialog dataset. Download multi-reference test data for DailyDialog from this [link](https://raw.githubusercontent.com/prakharguptaz/multirefeval/master/multiref-dataset/multireftest.json).
+```console
+❱❱❱ python post_process_dailydialog.py -in=<file_name>
+```
+Compute the metrics.  
+```console
+❱❱❱ python compute_metrics.py -in=<result_path> -hyp=<hyp_file>
+```
+Note: <result_path> is the directory that contains the <hyp_file> and the <ref_file>.
