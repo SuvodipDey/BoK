@@ -14,3 +14,21 @@ Download the following datasets.
 2. PersonaChat: Download data using ParlAI (https://parl.ai/docs/tasks.html#persona-chat)
 
 Set the dataset paths correctly in the following files: DialoGPT/create_data.py and T5/create_data.py
+
+## Train
+Train GPT2 and T5 by running train.py script provided in the respective directories.
+
+1. With BoK loss
+```console
+❱❱❱ python train.py -path=<model_dir> -src_file=train.py -dt=dd/pc -key
+```
+
+2. With BoW loss
+```console
+❱❱❱ python train.py -path=<model_dir> -src_file=train.py -dt=dd/pc -key -all
+```
+
+3. Basic Model
+```
+❱❱❱ python train.py -path=<model_dir> -src_file=train.py -dt=dd/pc
+```
